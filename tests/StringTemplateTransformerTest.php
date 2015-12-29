@@ -1,8 +1,8 @@
 <?php
 
-namespace MacFJA\PhpTransformer\Test\StringTemplate;
+namespace PhpTransformers\StringTemplate\Test;
 
-use \MacFJA\PhpTransformer\StringTemplate\StringTemplateTransformer;
+use PhpTransformers\StringTemplate\StringTemplateTransformer;
 use StringTemplate\Engine;
 
 class StringTemplateTransformerTest extends \PHPUnit_Framework_TestCase

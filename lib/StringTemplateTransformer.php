@@ -1,6 +1,6 @@
 <?php
 
-namespace MacFJA\PhpTransformer\StringTemplate;
+namespace PhpTransformers\StringTemplate;
 
 use PhpTransformers\PhpTransformer\TransformerInterface;
 use StringTemplate\AbstractEngine;
@@ -14,7 +14,7 @@ use StringTemplate\SprintfEngine;
  * {@link https://github.com/nicmart/StringTemplate}
  *
  * @author  MacFJA
- * @package MacFJA\PhpTransformer\StringTemplate
+ * @package PhpTransformers\StringTemplate
  * @license MIT
  */
 class StringTemplateTransformer implements TransformerInterface
@@ -59,7 +59,12 @@ class StringTemplateTransformer implements TransformerInterface
 
     protected function getEngine($key, $left, $right)
     {
-        $sprintf = array('sprintf', 'sprintfengine', strtolower('StringTemplate\SprintfEngine'));
+        $sprintf = array(
+            'sprintf',
+            'sprintfengine',
+            strtolower('StringTemplate\SprintfEngine'),
+            strtolower('\StringTemplate\SprintfEngine')
+        );
 
         if (in_array(strtolower($key), $sprintf, true)) {
             return new SprintfEngine($left, $right);

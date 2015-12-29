@@ -1,8 +1,9 @@
 {
-    "name": "macfja/phptransformer-string-template",
+    "name": "phptransformers/string-template",
     "authors": [
         {
-            "name": "MacFJA"
+            "name": "MacFJA",
+            "role": "Developer"
         }
     ],
     "description": "StringTemplate implementation of PhpTransformer",
@@ -18,12 +19,12 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MacFJA\\PhpTransformer\\Test\\StringTemplate\\": "tests/"
+            "PhpTransformers\\StringTemplate\\Test\\": "tests/"
         }
     },
     "autoload": {
         "psr-4": {
-            "MacFJA\\PhpTransformer\\StringTemplate\\": "lib/"
+            "PhpTransformers\\StringTemplate\\": "lib/"
         }
     }
 }

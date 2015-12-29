@@ -7,13 +7,13 @@
 Via Composer
 
 ``` bash
-$ composer require macfja/phptransformer-string-template
+$ composer require phptransformers/string-template
 ```
 
 ## Usage
 
 ``` php
-$engine = new StringTemplateTransformer(array('left_delimiter' => ':', 'right_delimiter');
+$engine = new StringTemplateTransformer(array('left_delimiter' => ':', 'right_delimiter' => '');
 echo $engine->render('Hello, :name!', array('name' => 'phptransformers');
 ```
 
